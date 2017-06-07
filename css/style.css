@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+body {
+	background-color: #FFF;
+	color:#DB3A34;
+	font-family: 'Arvo', serif;
+}
+
+h1{
+	text-align: center;
+
+}
+li {
+	text-align: center;
+	list-style: none;
+	padding: 10px;
+}
+.wrapper{
+	text-align: center;
+}
+.button{
+	position: absolute;
+	top:50%;
+}
+p{
+	text-align: center;
+	color: #000;
+}
+input[type=text]
+{
+    background-color: ;
+    color: #DB3A34;
+    border:dashed 1px #DB3A34;
+    border-radius: 5px;
+    height: 28px;
+    padding-left:10px;
+    width: 195px;
+    font-size: 15px;
+
+
+

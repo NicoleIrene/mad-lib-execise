@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mad Lib Exercise</title>
+ </head>
+ <body>
+ 
+    <h1>Mad Libs</h1>
+     
+    <ul>
+      <li>Noun: <input type="text" id="noun"></li>
+      <li>Adjective: <input type="text" id="adjective"></li>
+      <li>Verb: <input type="text" id="verb"></li>
+    </ul>
+     <div class="wrapper">
+    <button id="lib-button">Lib it!</button>
+      </div>
+    <p>Generated story: 
+    <div id="story"></div>
+    </p>
+ 
+    <script>
+        var noun = document.getElementById("noun");
+        var adjective = document.getElementById("adjective");
+        var verb = document.getElementById("verb");
+        var libButton = document.getElementById('lib-button');
+        var libIt = function() {
+            var storyDiv = document.getElementById("story");
+            storyDiv.innerHTML = "Three little speckled " + noun.value + " sat on a speckled log eating the most " + adjective.value + " bugs, yum yum! " + " One " + verb.value + " into the pool, where it was nice and cool, now there are two little speckled " + noun.value +"!" 
+            ;
+        };
+        libButton.addEventListener('click', libIt);
+        console.log(noun);
+        console.log(adjective);
+        console.log(verb);
+    </script>
+  
+ </body>
+</html>
